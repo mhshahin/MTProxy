@@ -1,2 +1,2 @@
-# MTProxy-Dockerfile
+# MTProxy Docker
 Dockerfile for Telegram MTProxy
