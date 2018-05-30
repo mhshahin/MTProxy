@@ -6,7 +6,7 @@ sleep 3
 
 docker build -t mtproxy .
 
-MTPROXY_ID=$(docker ps | grep mtproxy | awk '{print $1}’)
+MTPROXY_ID=$(docker ps | grep mtproxy | awk '{print $1}')
 
 echo ${MTPROXY_ID}
 
