@@ -12,8 +12,8 @@ RUN apk --update add \
 	mv JSMTProxy/* . && \
 	rm -rf JSMTProxy && \
 	npm install -g pm2 && \
-	sed 's/b0cbcef5a486d9636472ac27f8e11a9d/${YOUR_SECRET}/g' config.json && \
-	sed 's/6969/${YOUR_PORT}/g' config.json && \
+	sed -i "s/b0cbcef5a486d9636472ac27f8e11a9d/${YOUR_SECRET}/g" config.json && \
+	sed -i "s/6969/${YOUR_PORT}/g" config.json && \
 	rm -rf /tmp/* /var/cache/apk/*
 
 WORKDIR /home
