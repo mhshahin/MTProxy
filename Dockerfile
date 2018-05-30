@@ -2,7 +2,7 @@ FROM alpine
 
 # Change values to your desired values
 ENV YOUR_SECRET=b0cbcef5a486d9636472ac27f8e12a8c \
-	YOU_PORT=9500
+	YOUR_PORT=9500
 
 RUN apk --update add \
 	git \
