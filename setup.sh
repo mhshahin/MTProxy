@@ -11,7 +11,7 @@ echo "Building mtproxy docker image..."
 
 sleep 3
 
-docker build -t mtproxy .
+docker build -t mhshahin/mtproxy .
 
 echo "Running mtproxy image ..."
 
