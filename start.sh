@@ -5,4 +5,4 @@
 # after starting the container
 
 MTPROXY_ID=$(docker ps | grep mtproxy | awk '{print $1}’)
-docker exec pm2 start mtproxy.js -i max
+docker exec ${MTPROXY_ID} pm2 start mtproxy.js -i max
