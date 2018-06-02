@@ -8,7 +8,7 @@ docker run -itd -p 9500:9500 mhshahin/mtproxy
 ```
 2. Run the MTProxy service inside the container using the following command:
 ```bash
-docker exec <container_id> pm2 start mtproxy.js -i max
+docker exec $(docker ps | grep mtproxy | awk '{print $1}') pm2 start mtproxy.js -i max
 ```
 In order to get the 'container_id', execute this command:
 ```bash
