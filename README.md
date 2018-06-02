@@ -10,10 +10,6 @@ docker run -itd -p 9500:9500 mhshahin/mtproxy
 ```bash
 docker exec $(docker ps | grep mtproxy | awk '{print $1}') pm2 start mtproxy.js -i max
 ```
-In order to get the 'container_id', execute this command:
-```bash
-docker ps | grep mtproxy | awk '{print $1}'
-```
 3. To get the Secret Key:
 ```bash
 docker exec 1827be852842 env | grep SECRET | cut -b 13-
