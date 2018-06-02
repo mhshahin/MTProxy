@@ -19,4 +19,4 @@ If you wanna change the default Port and Secret, get the Dockerfile from the rep
 ```bash
 docker build -t mhshahin/mtproxy .
 ```
-and then proceed from step 2.
+and then proceed from step 1.
