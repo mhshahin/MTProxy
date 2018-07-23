@@ -7,6 +7,7 @@ ENV YOUR_SECRET=b0cbcef5a486d9636472ac27f8e12a8c \
 RUN apk --update add \
 	git \
 	nodejs && \
+	npm && \
 	cd /home && \
 	git clone https://github.com/FreedomPrevails/JSMTProxy.git && \
 	mv JSMTProxy/* . && \
