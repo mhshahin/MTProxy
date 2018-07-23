@@ -17,7 +17,7 @@ echo "Running mtproxy image ..."
 
 sleep 3
 
-docker run -itd --rm -p ${YOUR_PORT}:${YOUR_PORT} mtproxy
+docker run -itd --rm -p ${YOUR_PORT}:${YOUR_PORT} mhshahin/mtproxy
 
 MTPROXY_ID=$(docker ps | grep mtproxy | awk '{print $1}')
 
